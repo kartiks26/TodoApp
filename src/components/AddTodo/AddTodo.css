@@ -1,0 +1,102 @@
+.newTodoDiv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addTodo {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--tertiary);
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	max-width: 80%;
+	min-width: 50%;
+	min-height: 60%;
+	max-height: 80%;
+	position: absolute;
+	border-radius: 20px;
+	resize: both;
+	overflow: auto;
+}
+.addnewTodo {
+	animation: fadeIn 0.5s ease-in-out;
+	opacity: 1;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.AddTodoInputs {
+	width: 60%;
+
+	margin-top: 10px;
+	height: 35px;
+	outline: none;
+	padding: 8px 10px;
+	font-family: inherit;
+	font-size: inherit;
+	border-bottom-right-radius: 10px;
+	border: none;
+}
+.textArea {
+	height: max-content;
+	resize: vertical;
+}
+.AddTodoButton {
+	outline: none;
+	margin-top: 15px;
+
+	border-radius: 10px;
+	border: none;
+	font-family: inherit;
+	background-color: var(--secondary);
+	color: var(--primary);
+	cursor: pointer;
+	padding: 15px 30px;
+}
+.AddTodoButton:hover {
+	background-color: var(--secondary);
+	color: var(--tertiary);
+}
+.addnewTodo::before {
+	background-color: var(--primary);
+}
+.closeTodo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	cursor: pointer;
+}
+.selectStatus {
+	margin-top: 10px;
+	height: 35px;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 10px;
+	border: none;
+	width: 318px;
+}
+.newTodoTitle {
+	position: absolute;
+	top: 15px;
+	left: 29px;
+	font-weight: 500;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	color: var(--secondary);
+}

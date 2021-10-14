@@ -1,0 +1,41 @@
+.editingMode {
+	display: flex;
+	flex-direction: column;
+	font-family: inherit;
+	font-weight: 400;
+}
+.editingMode > input,
+textarea {
+	border: none;
+
+	margin-top: 10px;
+	padding: 5px 8px;
+}
+textarea {
+	resize: vertical;
+}
+textarea:focus {
+	outline: none;
+}
+.editingMode > img {
+	margin-top: 10px;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	width: max-content;
+}
+.DoneAndClose {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.ListTodos {
+	width: 15%;
+	display: flex;
+	padding: 20px;
+
+	flex-direction: column;
+	background-color: aliceblue;
+}

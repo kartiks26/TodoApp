@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.AllTodo {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: -1;
+}
+.ToggleButton {
+	position: absolute;
+	top: 60px;
+	right: 150px;
+}
+.LoginSignupactive {
+	z-index: -10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.aboutPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	background-color: rgb(255, 255, 255);
+	width: 100vw;
+	height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Footer {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	bottom: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.div1 {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+iframe {
+	margin-bottom: 55px;
+}
+.spaceEvenly {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
 }
